@@ -1,4 +1,4 @@
-class SubjectsController < ApplicationController
+class Supervisor::SubjectsController < ApplicationController
   before_action :load_subject, only: [:edit, :update, :destroy]
 
   def index
@@ -13,7 +13,7 @@ class SubjectsController < ApplicationController
   def create
     @subject = Subject.new subject_params
     if @subject.save
-      redirect_to subjects_path
+      redirect_to supervisor_subjects_path
     else
       render :new
     end
@@ -24,7 +24,7 @@ class SubjectsController < ApplicationController
 
   def update
     if @subject.update_attributes subject_params
-      redirect_to subjects_path
+      redirect_to supervisor_subjects_path
     else
       render :edit
     end
@@ -32,7 +32,7 @@ class SubjectsController < ApplicationController
 
   def destroy
     @subject.destroy
-    redirect_to subjects_url
+    redirect_to supervisor_subjects_url
   end
 
   private

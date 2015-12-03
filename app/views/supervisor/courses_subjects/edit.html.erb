@@ -1,0 +1,21 @@
+<h1><%= t'.finish_sub' %></h1>
+<br>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th><%= t'.subj_name' %></th>
+          <th><%= t'.subj_desc' %></th>
+        </tr>
+      </thead>
+      <% @courses_subject.each do |courses_subject| %>
+      <tr>
+        <td><%= courses_subject.subject.name %></td>
+        <td><%= courses_subject.subject.description %></td>
+        <td><%= link_to t'.finish' %></td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+</div>

@@ -20,3 +20,24 @@
                email: email,
                password: password)
 end
+## course
+10.times do |n|
+  name = Faker::Name.name
+  description = "description#{n+1}"
+  Course.create!(name: name,
+                 description: description)
+end
+##subject
+10.times do |n|
+  name = Faker::Name.name
+  description = "description for subject#{n+1}"
+  Subject.create!(name: name,
+                  description: description)
+end
+##course_subj
+10.times do |n|
+  cid = "#{n+1}"
+  sid = "#{n+1}"
+  CoursesSubject.create!(course_id: cid,
+                         subject_id: sid)
+end

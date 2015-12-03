@@ -10,25 +10,35 @@ en:
   log_in: Log in
   log_out: Log out
   sign_up: Sign Up Now!
-  subjects:
-    edit:
-      add_more_button: Add a new task
-      edit: Edit Subject
-    index:
-      create: Create New
-      delete_confirm: Are you sure you want to delete?
-      delete_link: Delete
-      desc: Description
-      edit_link: Edit
-      list: Listing of Subjects
-      name: Name
-    new:
-      add: Add Subject
-      add_more_in_add: Add a new task
-    task_fields:
-      name_placeholder: Task name
-      remove_button: Remove a task
   system_name: Framgia Training Management System
   view_all_supervisors: Supervisors
   view_all_trainee: Trainees
   welcome_message: Welcome to
+  supervisor:
+    subjects:
+      edit:
+        add_more_button: Add a new task
+        edit: Edit Subject
+      index:
+        create: Create New
+        delete_confirm: Are you sure you want to delete?
+        delete_link: Delete
+        desc: Description
+        edit_link: Edit
+        list: Listing of Subjects
+        name: Name
+      new:
+        add: Add Subject
+        add_more_in_add: Add a new task
+      task_fields:
+        name_placeholder: Task name
+        remove_button: Remove a task
+    courses_subjects:
+      index:
+        name: Course Name
+        desc: Description
+      edit:
+        subj_name: Subject Name
+        subj_desc: Subject Description
+        finish_sub: Finish subject
+        finish: Finish
